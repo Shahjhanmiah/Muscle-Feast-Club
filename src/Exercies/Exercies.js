@@ -1,5 +1,5 @@
 import React from 'react';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import './Exercies.css'
 
 const Exercies = (props) => {
@@ -15,11 +15,14 @@ const Exercies = (props) => {
 
     // toast showing 
 
-    const showtoast = () => {
-        toast.success('activite successfullay compleated', {
-            position: 'top-container'
-        })
+    // const showtoast = () => {
+    //     toast.success('activite successfullay compleated', {
+    //         position: 'top-container'
+    //     })
 
+    // }
+    const handlClick = ()=>{
+        toast.success('Acctive succefullay')
     }
     
 
@@ -49,7 +52,9 @@ const Exercies = (props) => {
                 </div>
             </div>
            
-           <button onClick={showtoast}>Click</button>
+           <div className='Activity-button'>
+           <button onClick={handlClick}>Activity</button>
+           </div>
             </div>
         
 

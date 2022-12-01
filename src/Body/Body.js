@@ -14,20 +14,23 @@ const Body = () => {
         .then(res=>res.json())
         .then(data=>setactivities(data))
     },[])
+    // useEffect
     useEffect(() => {
         const storedTime = getSavedTime()
         setTime(storedTime)
     }, [])
-    const addTolist = (id)=>{
-        const selectedItems = activities.find(activity=>activity.id===id)
-        const newCart = [...cart,selectedItems]
+
+    const addTolist = (id) => {
+        const selectedItems = activities.find(player => player.id === id)
+        const newCart = [...cart, selectedItems]
         setcart(newCart)
     }
-    const addBreakeTime = (value)=>{
-        time=value;
+    const addBreakTime = (value) => {
+        time = value;
         setTime(time)
         addToDb(value)
     }
+    
     return (
         <div className='body'>
             <div className='activities'>
@@ -45,7 +48,7 @@ const Body = () => {
                 <Exercies
 
                 cart={cart}
-                clickHandler2={addBreakeTime}
+                clickHandler2={addBreakTime}
                 time={time}>
                     
                 </Exercies>
