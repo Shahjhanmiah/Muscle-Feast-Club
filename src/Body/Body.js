@@ -21,7 +21,7 @@ const Body = () => {
     }, [])
 
     const addTolist = (id) => {
-        const selectedItems = activities.find(player => player.id === id)
+        const selectedItems = activities.find(player=>player.id === id)
         const newCart = [...cart, selectedItems]
         setcart(newCart)
     }
