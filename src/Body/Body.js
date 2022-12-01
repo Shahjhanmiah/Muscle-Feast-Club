@@ -21,8 +21,8 @@ const Body = () => {
     }, [])
 
     const addTolist = (id) => {
-        const selectedItems = activities.find(player=>player.id === id)
-        const newCart = [...cart, selectedItems]
+        const selectedItems = activities.find(player=>player.id===id)
+        const newCart = [...cart,selectedItems]
         setcart(newCart)
     }
     const addBreakTime = (value) => {

@@ -20,3 +20,7 @@ const Activity = (props) => {
 };
 
 export default Activity;
+
+
+
+// activity class er code 

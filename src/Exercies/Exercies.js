@@ -3,24 +3,16 @@ import toast from 'react-hot-toast';
 import './Exercies.css'
 
 const Exercies = (props) => {
-    const { cart, clickHandler2, time } = props
-    let exerciseTime = 0;
-    let breakTime = 0;
+    const {cart,clickHandler2,time } = props
+    let exerciseTime =0;
+    let breakTime =0;
     if (time) {
         breakTime = time;
     }
     for (const item of cart) {
-        exerciseTime = exerciseTime + item.time
+        exerciseTime = time+exerciseTime
     }
 
-    // toast showing 
-
-    // const showtoast = () => {
-    //     toast.success('activite successfullay compleated', {
-    //         position: 'top-container'
-    //     })
-
-    // }
     const handlClick = ()=>{
         toast.success('Acctive succefullay')
     }
