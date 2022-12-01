@@ -11,7 +11,7 @@ const Activity = (props) => {
                 <div>
                     <h5>Name : {name}</h5>
                     <p>Trainer : <strong>{trainer}</strong></p>
-                    <p>Time : {time} min</p>
+                    <p>Time :{time} min</p>
                 </div>
                 <button onClick={() => clickHandler(id)}>Add To List</button>
             </div>

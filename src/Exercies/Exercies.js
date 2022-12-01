@@ -1,5 +1,5 @@
 import React from 'react';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import './Exercies.css'
 
 const Exercies = (props) => {
@@ -15,12 +15,19 @@ const Exercies = (props) => {
 
     // toast showing 
 
-    const showtoast = () => {
-        toast.success('activite successfullay compleated', {
-            position: 'top-container'
-        })
+    // const showtoast = () => {
+    //     toast.success('activite successfullay compleated', {
+    //         position: 'top-container'
+    //     })
 
-    }
+    // }
+    const handleClick  = ()=>{
+           
+        toast.info('Yes your  courses endorel!',{autoClose:500})
+
+
+        
+}
 
     return (
         <div className='exercise'>
@@ -46,11 +53,10 @@ const Exercies = (props) => {
                     <p>{breakeTime} second</p>
                 </div>
             </div>
-            <div className='Activity-button'>
-                <button onClick={showtoast}>Activity Compleated</button>
+           
+           <button onClick={handleClick}>Click</button>
             </div>
-            <ToastContainer></ToastContainer>
-        </div>
+        
 
         
     );
