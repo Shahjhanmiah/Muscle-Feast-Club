@@ -4,13 +4,13 @@ import './Exercies.css'
 
 const Exercies = (props) => {
     const { cart, clickHandler2, time } = props
-    let exerciesTime = 0;
-    let breakeTime = 0;
-    if (time){
-        breakeTime = time;
+    let exerciseTime = 0;
+    let breakTime = 0;
+    if (time) {
+        breakTime = time;
     }
     for (const item of cart) {
-        exerciesTime = exerciesTime + item.time
+        exerciseTime = exerciseTime + item.time
     }
 
     // toast showing 
@@ -44,11 +44,11 @@ const Exercies = (props) => {
                 <h4>Exercise Details</h4>
                 <div className='Exercise-boxes'>
                     <p><strong>Exercise Time</strong></p>
-                    <p>{exerciesTime} minute</p>
+                    <p>{exerciseTime} minute</p>
                 </div>
                 <div className='Exercise-boxes'>
                     <p><strong>Break Time</strong></p>
-                    <p>{breakeTime} second</p>
+                    <p>{breakTime} second</p>
                 </div>
             </div>
            
