@@ -15,19 +15,14 @@ const Exercies = (props) => {
 
     // toast showing 
 
-    // const showtoast = () => {
-    //     toast.success('activite successfullay compleated', {
-    //         position: 'top-container'
-    //     })
+    const showtoast = () => {
+        toast.success('activite successfullay compleated', {
+            position: 'top-container'
+        })
 
-    // }
-    const handleClick  = ()=>{
-           
-        toast.info('Yes your  courses endorel!',{autoClose:500})
+    }
+    
 
-
-        
-}
 
     return (
         <div className='exercise'>
@@ -54,7 +49,7 @@ const Exercies = (props) => {
                 </div>
             </div>
            
-           <button onClick={handleClick}>Click</button>
+           <button onClick={showtoast}>Click</button>
             </div>
         
 
