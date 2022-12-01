@@ -55,11 +55,11 @@ const Exercies = (props) => {
            <div className='Activity-button'>
            <button onClick={handlClick}>Activity</button>
            </div>
-            </div>
-        
-
-        
+            </div>  
     );
 };
 
 export default Exercies;
+
+
+// get add 
