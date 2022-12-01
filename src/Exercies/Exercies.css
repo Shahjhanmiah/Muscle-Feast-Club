@@ -1,0 +1,65 @@
+.add-break {
+    padding: 2%;
+    margin-top: 10%;
+}
+
+.buttons {
+    border-radius: 3%;
+    background-color: aquamarine;
+    padding: 2%;
+}
+
+.buttons button {
+    margin: 1% 1%;
+    border: none;
+    padding: 3%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.buttons button:hover {
+    background-color: lightgreen;
+}
+
+.exercise-details {
+    margin-top: 10%;
+}
+
+.Exercise-boxes {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3%;
+    background-color: aquamarine;
+    padding: 2%;
+    margin: 5% 3%;
+}
+
+.Activity-button {
+    margin-top: 15%;
+}
+
+.Activity-button button {
+    background-color: palegreen;
+    padding: 3% 10%;
+    border: none;
+    border-radius: 5%;
+}
+
+.Activity-button button:hover {
+    background-color: springgreen;
+}
+
+@media only screen and (max-width : 700px) {
+    .add-break {
+        padding: 2%;
+        margin-top: 3%;
+    }
+
+    .exercise-details {
+        margin-top: 3%;
+    }
+
+    .Activity-button {
+        margin-top: 5%;
+    }
+}

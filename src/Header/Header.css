@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding-left: 5%;
+}
+
+.siteName {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.siteName img {
+    width: 15%;
+}
+
+.links {
+    width: 50%;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 3%;
+    color: orange;
+}
+
+.links a:hover {
+    color: blue;
+}

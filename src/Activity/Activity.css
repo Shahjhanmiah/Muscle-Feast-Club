@@ -1,0 +1,42 @@
+.activity {
+    background-color: lightgoldenrodyellow;
+    border-radius: 2%;
+    border: 3px solid black;
+}
+
+.activity img {
+    width: 50%;
+    height: 50%;
+    border-radius: 2%;
+    box-sizing: border-box;
+}
+
+
+.activity button {
+    width: 80%;
+    height: 7%;
+    border: none;
+    border-radius: 3%;
+    background-color: salmon;
+    margin-top: 2%;
+}
+
+.activity button:hover {
+
+    background-color: tomato;
+}
+
+@media only screen and (max-width : 700px) {
+    .activity {
+        margin-top: 5%;
+    }
+
+    .activity img {
+        width: 100%;
+        border-radius: 2%;
+    }
+
+    .activity-info {
+        padding: 3%;
+    }
+}
