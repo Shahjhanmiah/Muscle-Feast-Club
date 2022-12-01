@@ -5,12 +5,10 @@
 }
 
 .activity img {
-    width: 50%;
+    width: 100%;
     height: 50%;
     border-radius: 2%;
-    box-sizing: border-box;
 }
-
 
 .activity button {
     width: 80%;
